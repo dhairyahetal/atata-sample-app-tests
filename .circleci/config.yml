@@ -16,7 +16,7 @@ jobs:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
       
      # - image: selenium/node-chrome 
-       - image: selenium/standalone-chrome  
+      - image: selenium/standalone-chrome  
     
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
