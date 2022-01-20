@@ -33,7 +33,8 @@ jobs:
           command: |
             
             google-chrome --version
-           
+            docker:
+               -image: - selenium/standalone-chrome
             cd test
             cd AtataSampleApp.UITests
             dotnet test
