@@ -14,7 +14,8 @@ jobs:
     # Be sure to update the tag on this image to a more stable version, using latest can result in unstable builds.
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
-        
+      
+      - image: selenium/standalone-chrome     
     
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
@@ -22,8 +23,7 @@ jobs:
       
       - browser-tools/install-chrome:
           chrome-version: 97.0.4692.99
-      docker:
-         - image: selenium/standalone-chrome   
+     
       # Checkout the code as the first step.
       - checkout
       # Then simply use the dotnet container as you'd expect and run your tests
