@@ -15,7 +15,7 @@ jobs:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
         
-    executor: browser-tools/default    
+    
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
