@@ -29,7 +29,7 @@ namespace AtataSampleApp.UITests
             default:
                 throw new InvalidOperationException($"Unknown '{driverType}' driver type.");
         }
-    })
+    });
         }
     }
 }
