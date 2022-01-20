@@ -31,8 +31,9 @@ jobs:
           working_directory: ~/project
           name: Run tests
           command: |
+            sudo apt-get install chrome-browser
             google-chrome --version
-            chromedriver --version
+           
             name: Check install
             cd test
             cd AtataSampleApp.UITests
