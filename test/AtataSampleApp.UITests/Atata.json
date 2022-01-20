@@ -5,7 +5,7 @@
       "type": "chrome",
       "headless": true,
       "options": {
-        "arguments": [ "start-maximized", "--no-sandbox" ]
+        "arguments": [ "start-maximized", "--no-sandbox" , "--disable-dev-shm-usage"]
       }
     }
   ],
