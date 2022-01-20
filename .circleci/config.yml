@@ -33,7 +33,7 @@ jobs:
           name: Run tests
           command: |
             
-            google-chrome --version
+        
             
             cd test
             cd AtataSampleApp.UITests
