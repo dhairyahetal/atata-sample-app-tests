@@ -12,24 +12,10 @@ namespace AtataSampleApp.UITests
             AtataContext.GlobalConfiguration
                 .ApplyJsonConfig<AtataConfig>()
                 .UseDefaultArtifactsPathIncludingBuildStart(
-                    TestContext.Parameters.Get("UseDefaultArtifactsPathIncludingBuildStart", true));
+                    TestContext.Parameters.Get("UseDefaultArtifactsPathIncludingBuildStart", true))
+                .AutoSetUpDriverToUse();
                
-         AtataContext.Build().
-    UseDriver(() =>
-    {
-        string driverType = ConfigurationManager.AppSettings["DriverType"];
-        switch (driverType)
-        {
-            case "Firefox":
-                return new FirefoxDriver();
-            case "Chrome":
-                return new ChromeDriver();
-            case "InternetExplorer":
-                return new InternetExplorerDriver();
-            default:
-                throw new InvalidOperationException($"Unknown '{driverType}' driver type.");
-        }
-    });
+
         }
     }
 }
