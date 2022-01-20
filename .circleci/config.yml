@@ -22,7 +22,8 @@ jobs:
       
       - browser-tools/install-chrome:
           chrome-version: 97.0.4692.99
-          
+      docker:
+         - image: selenium/standalone-chrome   
       # Checkout the code as the first step.
       - checkout
       # Then simply use the dotnet container as you'd expect and run your tests
@@ -33,8 +34,7 @@ jobs:
           command: |
             
             google-chrome --version
-            docker:
-               -image: - selenium/standalone-chrome
+            
             cd test
             cd AtataSampleApp.UITests
             dotnet test
