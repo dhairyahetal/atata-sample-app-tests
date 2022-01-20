@@ -31,7 +31,7 @@ jobs:
           working_directory: ~/project
           name: Run tests
           command: |
-            sudo apt-get install chrome-browser
+            
             google-chrome --version
            
             name: Check install
