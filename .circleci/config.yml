@@ -15,14 +15,14 @@ jobs:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
       
-      - image: selenium/standalone-chrome     
+      - image: selenium/node-chrome     
     
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       
-      - browser-tools/install-chrome:
-          chrome-version: 97.0.4692.99
+    #  - browser-tools/install-chrome:
+     #     chrome-version: 97.0.4692.99
      
       # Checkout the code as the first step.
       - checkout
