@@ -5,7 +5,7 @@
       "type": "chrome",
       "headless": true,
       "options": {
-        "arguments": [ "start-maximized" ]
+        "arguments": [ "start-maximized", "--no-sandbox" ]
       }
     }
   ],
