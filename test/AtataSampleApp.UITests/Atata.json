@@ -3,6 +3,7 @@
   "drivers": [
     {
       "type": "chrome",
+      "headless": true,
       "options": {
         "arguments": [ "start-maximized" ]
       }
