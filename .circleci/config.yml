@@ -34,7 +34,6 @@ jobs:
             
             google-chrome --version
            
-            name: Check install
             cd test
             cd AtataSampleApp.UITests
             dotnet test
