@@ -15,12 +15,14 @@ jobs:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.1
         
-        
+    executor: browser-tools/default    
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      
+      - browser-tools/install-browser-tools:
+          chrome-version: 97.0.4692.99
+          
       # Checkout the code as the first step.
       - checkout
       # Then simply use the dotnet container as you'd expect and run your tests
