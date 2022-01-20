@@ -23,7 +23,7 @@ jobs:
           working_directory: ~/project
           name: Run tests
           command: |
-            - checkout
+          
             cd test
             cd AtataSampleAppUI.Tests
             dotnet test
