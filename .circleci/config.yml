@@ -24,7 +24,8 @@ jobs:
           name: Run tests
           command: |
             - checkout
-            cd test/AtataSampleAppUI.Tests
+            cd test
+            cd AtataSampleAppUI.Tests
             dotnet test
 
 # Invoke jobs via workflows
