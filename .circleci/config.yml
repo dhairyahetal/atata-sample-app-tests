@@ -21,8 +21,8 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       
-    #  - browser-tools/install-chrome:
-     #     chrome-version: 97.0.4692.99
+      - browser-tools/install-chrome:
+           chrome-version: 97.0.4692.99
      
       # Checkout the code as the first step.
       - checkout
